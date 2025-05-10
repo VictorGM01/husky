@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "🧪 Running tests..."
+npm test || exit 1
+
+echo "✅ Pre-push hook completed successfully!" 
